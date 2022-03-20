@@ -1,0 +1,11 @@
+FROM ruby:2.7-bullseye
+
+ENV NODE_VERSION=v16.14.2
+
+RUN wget https://nodejs.org/dist/${NODE_VERSION}/node-${NODE_VERSION}-linux-x64.tar.xz && \
+    tar -xJf node-${NODE_VERSION}-linux-x64.tar.xz -C /usr/local --strip-components=1 && \
+    rm -r node-${NODE_VERSION}-linux-x64.tar.xz
+
+RUN useradd -s /bin/bash -m vscode
+
+USER vscode
