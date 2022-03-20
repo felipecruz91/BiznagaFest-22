@@ -13,7 +13,7 @@ exclude: ['/automation/', 'README.md', 'LICENSE.txt', 'CNAME']
 title: "BiznagaFest 2022"
 email: "gdgmalaga@gmail.com"
 description: "BiznagaFest is a set of events all around the world"
-baseurl: "/"
+baseurl: ""
 url: "https://gdg-x.github.io"
 permalink: "/blog/:title"
 googleAnalyticsTrackingId: "UA-43643469-5"
